@@ -1,0 +1,18 @@
+Instruction: Given a XML document from a user that stores image metadata,
+the following entries will be present
+    - "source": a string describing the document source
+    - "url": a string storing a web url for an image
+    - "height": an integer describing the height of the image
+    - "width": an integer describing the width of the image
+Extract these entries from the document and output them as a python
+dictionary that preserves the original key value pairs. If any the fields above
+are nont present, leave them empty in the python dictionary.
+
+Examples:{'source':'upload', 'url':'www.qq.com','height':120,'width':240}
+
+Input:<root>
+    <source>upload</source>
+    <url>www.myimgurl.com</url>
+    <height>100</height>
+    <width>200</width>
+</root>
